@@ -1,0 +1,41 @@
+html,
+body {
+    background-color: #f9f9f9;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+#title-bar {
+    width: 100%;
+    height: auto;
+    background-color: #1d87ff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+/*----------HEADINGS----------*/
+.page-heading {
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.game-heading {
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+
+
+.memory-game {
+    background-color: #1d87ff;
+    height: 100px;
+    width: 100px;
+    margin: 0 5px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
