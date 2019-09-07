@@ -64,7 +64,7 @@ let turnCounter = 0;
 
 const game = document.getElementById('game');
 const grid = document.createElement('section');
-grid.setAttribute('class', 'grid');
+grid.setAttribute('class', 'lvl3-grid');
 game.appendChild(grid);
 
 gameGrid.forEach(item => {

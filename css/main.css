@@ -17,7 +17,21 @@ body {
     margin-bottom: 30px;
 }
 
-/*----------HEADINGS----------*/
+#simplypairs {
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.game-btn {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.nav-btn {
+    margin: 0 5px;
+}
+
+/*----------HEADINGS AND TEXT----------*/
 .page-heading {
     color: #f9f9f9;
     font-weight: bold;
@@ -29,11 +43,16 @@ body {
     font-weight: bold;
 }
 
+.game-info {
+    color: #f9f9f9;
 
+}
+
+/*----------GAME CSS----------*/
 
 .memory-game {
     background-color: #1d87ff;
-    height: 100px;
+    height: auto;
     width: 100px;
     margin: 0 5px;
     text-align: center;
@@ -41,8 +60,24 @@ body {
     border-radius: 10px;
 }
 
-.grid {
+.lvl3-grid {
     max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.lvl2-grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.lvl1-grid {
+    max-width: 640px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +106,7 @@ body {
 
 .front {
     z-index: 2;
-    background: #FAB942 url('../img/question.gif') no-repeat center center / contain;
+    background: #f55d42 url('png/playingcard-back.png') no-repeat center center / contain;
 }
 
 .back {
@@ -86,9 +121,11 @@ body {
 }
 
 .match .front {
-    background-image: url('https://www.trzcacak.rs/myfile/detail/1-13655_green-tick-icon-image-green-tick-icon-png.png') !important;
+    background: #71d17f !important;
     width:150px;
 }
+
+/*----------TURN COUNTER CSS----------*/
 
 #turns {
     width:200px;

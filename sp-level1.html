@@ -11,7 +11,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="css/main.css">
-    <title>Milestone 2 - Memory Games</title>
+    <title>MSimply Pairs - Level 1</title>
 </head>
 
 <body>
@@ -20,25 +20,30 @@
         <div id="title-bar">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="page-heading">Memory Games</h1>
+                    <h1 class="page-heading">Simply Pairs level 1</h1>
                 </div>
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <div class="memory-game col-sm-12 col-md-3">
-                <h2 class="game-heading">Simply Pairs</h2>
-                <img src="png/simplypairsimage.PNG" alt="Simply Pairs Image" id="simplypairs">
-                <p class="game-info">Find and match pairs of card.</p>
-                <a href="level-select.html"><button type="button" class="btn btn-light game-btn">Play</button></a>
-            </div>
-            <div class="memory-game col-sm-12 col-md-3">
-                <h2 class="game-heading">Game 2</h2>
-                <a href="#"><button type="button" class="btn btn-light game-btn">Game 2</button></a>
+            <div id="game">
+
             </div>
         </div>
+
+
+        <div class="row justify-content-center turn-counter">
+            <div id="turns"><h2 id="temp-turns">Turns</h2></div>
+        </div>
+
+        <div class="row justify-content-center">
+            <a href="level-select.html"><button type="button" class="btn btn-dark nav-btn">Level Select</button></a>
+            <a href="index.html"><button type="button" class="btn btn-dark nav-btn">Home</button></a>
+        </div>
+        
     </div>
 
+    <script src="js/game-level1.js"></script>
 </body>
 
 </html>
