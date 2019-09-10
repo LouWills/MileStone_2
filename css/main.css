@@ -133,12 +133,9 @@ body {
     background-color: black;
     margin-left: 15px;
     margin: 10px;
+    color:#f9f9f9;
 }
 
 .turn-counter {
     text-align: center;
-}
-
-#temp-turns {
-    color: #f9f9f9;
 }
