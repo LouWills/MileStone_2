@@ -121,7 +121,8 @@ if (count === 1) {
   secondGuess = clicked.parentNode.dataset.name;
   console.log(secondGuess);
   clicked.parentNode.classList.add('selected');
-
+  turnCounter++;
+  console.log(turnCounter);
 }
 
 if (firstGuess && secondGuess) {
@@ -138,8 +139,8 @@ previousTarget = clicked;
 //Trying to check if all the child element of the game grid have the class of match
 //(Check if all game cards have been matched)
 //Then show a victory bootstrap modal
-let gameParent = document.querySelector(".lvl1-grid");
+var gameNodes = document.getElementsByClassName("lvl1-grid").childNodes;
 
-if (gameParent.children.length == gameParent.querySelectorAll(".match").length) {
-  $('#exampleModal').show(fast);
+if (gameNodes.length == gameParent.querySelectorAll(".match").length) {
+  document.getElementsByClassName("lvl1-grid").innerHTML = "Congratulations!! You completed this level";
 }
