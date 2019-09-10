@@ -116,7 +116,9 @@ if (count === 1) {
   secondGuess = clicked.parentNode.dataset.name;
   console.log(secondGuess);
   clicked.parentNode.classList.add('selected');
-
+  turnCounter++;
+  console.log(turnCounter);
+  document.getElementById("turns").innerHTML = `<h2>Turns: ${turnCounter}</h2>`;
 }
 
 if (firstGuess && secondGuess) {

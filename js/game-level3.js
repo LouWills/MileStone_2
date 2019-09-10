@@ -2,53 +2,53 @@
 
 // playing card data
 const cardsArray = [{
-        name: 'joker',
-        img: 'png/black_joker.png',
-    },
-    {
-        name: 'aceSpades',
-        img: 'png/ace_of_spades.png',
-    },
-    {
-        name: 'aceHearts',
-        img: 'png/ace_of_hearts.png',
-    },
-    {
-        name: '10Diamonds',
-        img: 'png/10_of_diamonds.png',
-    },
-    {
-        name: '10Clubs',
-        img: 'png/10_of_clubs.png',
-    },
-    {
-        name: 'queenDiamonds',
-        img: 'png/queen_of_diamonds.png',
-    },
-    {
-        name: 'queenHearts',
-        img: 'png/queen_of_hearts.png',
-    },
-    {
-        name: 'kingSpades',
-        img: 'png/king_of_spades.png',
-    },
-    {
-        name: 'kingClubs',
-        img: 'png/king_of_clubs.png',
-    },
-    {
-        name: '7Hearts',
-        img: 'png/7_of_hearts.png',
-    },
-    {
-        name: '4Clubs',
-        img: 'png/4_of_clubs.png',
-    },
-    {
-        name: '2Diamonds',
-        img: 'png/2_of_diamonds.png',
-    },
+    name: 'joker',
+    img: 'png/black_joker.png',
+  },
+  {
+    name: 'aceSpades',
+    img: 'png/ace_of_spades.png',
+  },
+  {
+    name: 'aceHearts',
+    img: 'png/ace_of_hearts.png',
+  },
+  {
+    name: '10Diamonds',
+    img: 'png/10_of_diamonds.png',
+  },
+  {
+    name: '10Clubs',
+    img: 'png/10_of_clubs.png',
+  },
+  {
+    name: 'queenDiamonds',
+    img: 'png/queen_of_diamonds.png',
+  },
+  {
+    name: 'queenHearts',
+    img: 'png/queen_of_hearts.png',
+  },
+  {
+    name: 'kingSpades',
+    img: 'png/king_of_spades.png',
+  },
+  {
+    name: 'kingClubs',
+    img: 'png/king_of_clubs.png',
+  },
+  {
+    name: '7Hearts',
+    img: 'png/7_of_hearts.png',
+  },
+  {
+    name: '4Clubs',
+    img: 'png/4_of_clubs.png',
+  },
+  {
+    name: '2Diamonds',
+    img: 'png/2_of_diamonds.png',
+  },
 ]
 
 const gameGrid = cardsArray
@@ -68,7 +68,10 @@ grid.setAttribute('class', 'lvl3-grid');
 game.appendChild(grid);
 
 gameGrid.forEach(item => {
-  const { name, img } = item;
+  const {
+    name,
+    img
+  } = item;
 
   const card = document.createElement('div');
   card.classList.add('card');
@@ -128,7 +131,9 @@ grid.addEventListener('click', event => {
       secondGuess = clicked.parentNode.dataset.name;
       console.log(secondGuess);
       clicked.parentNode.classList.add('selected');
-
+      turnCounter++;
+      console.log(turnCounter);
+      document.getElementById("turns").innerHTML = `<h2>Turns: ${turnCounter}</h2>`;
     }
 
     if (firstGuess && secondGuess) {
