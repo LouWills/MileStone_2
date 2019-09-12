@@ -130,7 +130,8 @@ body {
 #turns {
     width:200px;
     height:50px;
-    background-color: black;
+    background-color: #343a40;
+    border-radius: 12px;
     margin-left: 15px;
     margin: 10px;
     color:#f9f9f9;
