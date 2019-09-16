@@ -31,6 +31,10 @@ body {
     margin: 0 5px;
 }
 
+.levels {
+    margin-bottom: 15px;
+}
+
 /*----------HEADINGS AND TEXT----------*/
 .page-heading {
     color: #f9f9f9;
@@ -122,21 +126,79 @@ body {
 
 .match .front {
     background: #71d17f !important;
-    width:150px;
+    width: 150px;
 }
 
 /*----------TURN COUNTER CSS----------*/
 
 #turns {
-    width:200px;
-    height:50px;
+    width: 200px;
+    height: 50px;
     background-color: #343a40;
     border-radius: 12px;
     margin-left: 15px;
     margin: 10px;
-    color:#f9f9f9;
+    color: #f9f9f9;
 }
 
 .turn-counter {
     text-align: center;
+}
+
+
+/*----------Media Queries----------*/
+
+@media (min-width: 1024px) and (max-width: 1250px) {
+
+    #simplypairs {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/*----------Tablets----------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .memory-game {
+        margin-bottom: 20px;
+    }
+
+    #simplypairs {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .card,
+    .back,
+    .front {
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+/*----------Mobiles----------*/
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .memory-game {
+        margin-bottom: 20px;
+    }
+
+    #simplypairs {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .page-heading {
+        font-size: 45px;
+    }
+    .card,
+    .back,
+    .front {
+        height: 100px;
+        width: 100px;
+        margin: 2px;
+    }
+
 }
