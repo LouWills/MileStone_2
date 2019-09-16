@@ -76,7 +76,7 @@ body {
     justify-content: space-evenly;
 }
 
-.lvl1-grid {
+#lvl1-grid {
     max-width: 640px;
     margin: 0 auto;
     display: flex;

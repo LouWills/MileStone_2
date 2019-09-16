@@ -41,6 +41,7 @@ let secondGuess = '';
 let count = 0;
 let previousTarget = null;
 let delay = 1200;
+var gameParent = '';
 
 //Turn counter variable doesn't work...yet!!
 let turnCounter = 0;
@@ -49,7 +50,7 @@ let turnCounter = 0;
 //setting the section the class 'lvl1 grid'
 const game = document.getElementById('game');
 const grid = document.createElement('section');
-grid.setAttribute('class', 'lvl1-grid');
+grid.setAttribute('id', 'lvl1-grid');
 game.appendChild(grid);
 
 //
@@ -140,8 +141,8 @@ previousTarget = clicked;
 //Trying to check if all the child element of the game grid have the class of match
 //(Check if all game cards have been matched)
 //Then show a victory bootstrap modal
-var gameNodes = document.getElementsByClassName("lvl1-grid").childNodes;
+var gameParent = document.getElementById("lvl1.grid");
 
-if (gameNodes.length == gameParent.querySelectorAll(".match").length) {
-  document.getElementsByClassName("lvl1-grid").innerHTML = "Congratulations!! You completed this level";
+if (gameParent.children.length == gameParent.querySelectorAll(".match").length) {
+  console.log("All children have the class “match”.");
 }
