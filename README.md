@@ -58,10 +58,11 @@ As mentioned earlier, Levels 1,2 and 3 look good on larger, desktop screens howe
 ### Deployment
 ***
 
-I created a beta release that is deployed to github pages
+Branched the beta version and released.
 
 
 ### Credits/Assets
+***
 
 - Original game code: https://github.com/taniarascia/memory
 - Hover.css: https://github.com/IanLunn/Hover
